@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "moto",
+  "version": "1.0",
+  "description": "nettimoto homma",
+  "content_scripts": [
+    {
+      "js": ["scripts/moto.js"],
+      "matches": [ "https://www.nettimoto.com/*"]
+    },
+    {
+     "js": ["scripts/vene.js"],
+     "matches": ["https://www.nettivene.com/*"] 
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
